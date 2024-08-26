@@ -7,6 +7,7 @@ export interface Company {
 }
 
 export enum Companies {
+  TRACTIAN = "tractian",
   MERITUM = "meritum",
   META = "meta",
   OLIST = "olist",
