@@ -3,7 +3,7 @@ import { render, screen, within } from "@testing-library/react";
 import { CareerSection } from ".";
 import { strings } from "./strings";
 
-const careerCardAmount = 3;
+const careerCardAmount = 4;
 
 describe("Bio Section", () => {
   beforeEach(() => {
