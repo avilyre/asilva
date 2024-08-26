@@ -13,9 +13,15 @@ export const CareerSection = () => {
 
       <div className="flex flex-col  gap-8">
         <CareerCard
+          company={getCompany(Companies.TRACTIAN)}
+          role="frontend software engineer"
+          startDate="2024-08-26"
+        />
+        <CareerCard
           company={getCompany(Companies.MERITUM)}
-          role="software engineer"
+          role="frontend software engineer"
           startDate="2022-04-015"
+          endDate="2024-08-23"
         />
         <CareerCard
           company={getCompany(Companies.META)}
