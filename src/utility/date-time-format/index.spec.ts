@@ -7,4 +7,13 @@ describe("dateTimeFormat", () => {
 
     expect(formattedDate).to.be.equal("ago. de 2024");
   });
+
+  it("Should return a formatted date with options", () => {
+    const date = new Date("2024-10-05");
+    const formattedDate = dateTimeFormat(date, {
+      weekday: "long",
+    });
+
+    expect(formattedDate).to.includes("sábado");
+  });
 });
