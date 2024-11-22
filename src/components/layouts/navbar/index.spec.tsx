@@ -29,11 +29,11 @@ describe("Navbar Component", () => {
     expect(homeLinkElement).toHaveAttribute("href", "/about");
   });
 
-  it("Should be able to render the Projects link element", async () => {
+  it("Should be able to render the Contents link element", async () => {
     const homeLinkElement = await screen.findByRole("link", {
-      name: strings.projects,
+      name: strings.contents,
     });
     expect(homeLinkElement).toBeInTheDocument();
-    expect(homeLinkElement).toHaveAttribute("href", "/projects");
+    expect(homeLinkElement).toHaveAttribute("href", "/contents");
   });
 });

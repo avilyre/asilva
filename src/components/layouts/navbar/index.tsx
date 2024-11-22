@@ -21,7 +21,6 @@ export const Navbar = () => {
 
       <div className="flex gap-8">
         <NavItem href="/about">{strings.about}</NavItem>
-        <NavItem href="/projects">{strings.projects}</NavItem>
         <NavItem href="/contents">{strings.contents}</NavItem>
       </div>
     </nav>
