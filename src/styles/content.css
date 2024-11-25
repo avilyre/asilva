@@ -1,6 +1,10 @@
 .content {
   @apply text-secondary leading-relaxed;
 
+  code:not([class*='language']) {
+    @apply bg-[#282c34] text-secondary px-2 py-1 rounded;
+}
+
   img[title] {
     @apply aspect-video w-full select-none rounded-md bg-tertiary object-cover sm:aspect-[16/5.68];
   }
