@@ -8,13 +8,13 @@ export const ContentsList = (props: ContentsListProps) => {
   return (
     <section className="flex flex-col gap-10">
       {contents?.map(content => {
-        const key = `${content.title}-${content.date}`;
+        const key = `${content.title}-${content.createdAt}`;
 
         return (
           <ContentItem
             key={key}
             title={content.title}
-            createdAt={content.date}
+            createdAt={content.createdAt}
             slug={content.slug}
           />
         );

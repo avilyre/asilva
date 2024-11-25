@@ -20,8 +20,11 @@ export function getContentBySlug(slug: string) {
 
 export function getAllContents(): Content[] {
   const slugs = getContentSlugs();
+
   const contents = slugs
     .map(slug => getContentBySlug(slug))
-    .sort((content1, content2) => (content1.date > content2.date ? -1 : 1));
+    .sort((content1, content2) =>
+      content1.createdAt > content2.createdAt ? -1 : 1,
+    );
   return contents;
 }

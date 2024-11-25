@@ -21,7 +21,7 @@ export const ContentItem = (props: ContentItemProps) => {
           {title}
         </h3>
         <time dateTime={createdAt} className="leading-tight text-secondary">
-          {`${createdAtDate.getDate()} de ${dateTimeFormat(createdAtDate)}`}
+          {`${createdAtDate.getDate()} de ${dateTimeFormat(new Date(createdAt))}`}
         </time>
       </article>
     </Link>

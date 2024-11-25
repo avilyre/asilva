@@ -18,7 +18,7 @@
   }
 
   p {
-    @apply mb-8;
+    @apply mb-8 select-none;
   }
 
   strong {
@@ -26,31 +26,31 @@
   }
 
   h1 {
-    @apply text-primary text-4xl font-semibold leading-tight mb-8;
+    @apply select-none text-primary text-4xl font-semibold leading-tight mb-8;
   }
 
   h2 {
-    @apply text-white mb-4 text-3xl;
+    @apply select-none text-white mb-4 text-3xl;
   }
 
   h3 {
-    @apply text-white mb-4  text-2xl;
+    @apply select-none text-white mb-4  text-2xl;
   }
 
   h4 {
-    @apply text-white mb-4  text-xl;
+    @apply select-none text-white mb-4  text-xl;
   }
 
   ul {
-    @apply list-disc pl-8;
+    @apply select-none list-disc pl-8;
   }
 
   ul > p {
-    @apply mt-4
+    @apply select-none mt-4
   }
 
   li {
-    @apply py-2;
+    @apply select-none py-2;
   }
 
   img {

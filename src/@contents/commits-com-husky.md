@@ -1,10 +1,9 @@
 ---
 title: commits com husky - garantindo a qualidade
-cover: /images/contents/commits-com-husky/cover.jpg
-date: "2024-11-25 16:26:00"
+summary: aprenda como aumentar a qualidade dos seus commits utilizando o husky, uma ferramente consolidada no mercado e utilizada por grandes empresas.
+thumbnail: /images/contents/commits-com-husky/thumbnail.jpg
+createdAt: "2024-11-25:16:26:00"
 ---
-
-![raça husky](/images/contents/commits-com-husky/cover.jpg "cover")
 
 ## O que é o Husky ?
 

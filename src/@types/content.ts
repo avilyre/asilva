@@ -1,12 +1,9 @@
 export type Content = {
   slug: string;
   title: string;
-  date: string;
-  coverImage: string;
+  summary: string;
+  createdAt: string;
+  thumbnail: string;
   excerpt: string;
-  ogImage: {
-    url: string;
-  };
   content: string;
-  preview?: boolean;
 };

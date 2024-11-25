@@ -1,18 +1,43 @@
+import { cn } from "@/utility/cn";
+
 import { PageHeaderProps } from "./interface";
 
 export const PageHeader = (props: PageHeaderProps) => {
-  const { title, description, hasMarginTop = false } = props;
+  const {
+    title,
+    description,
+    hasMarginTop = false,
+    className,
+    shouldAdaptToSmallContext = false,
+  } = props;
 
   if (!title || !description) return null;
 
   const marginTop = hasMarginTop ? "mt-8" : "";
 
+  const adaptiveTitleSize = shouldAdaptToSmallContext
+    ? "text-3xl lg:text-4xl"
+    : "text-4xl lg:text-5xl";
+
   return (
-    <header data-testid="page-header" className={`mb-16 ${marginTop}`}>
-      <h1 className="select-none text-balance text-4xl font-semibold leading-tight text-primary lg:text-5xl">
+    <header
+      data-testid="page-header"
+      className={cn(["mb-16", marginTop, className])}
+    >
+      <h1
+        className={cn([
+          "select-none text-balance font-semibold leading-tight text-primary",
+          adaptiveTitleSize,
+        ])}
+      >
         {title}
       </h1>
-      <h2 className="mt-3 max-w-[384px] select-none text-balance text-base leading-relaxed text-secondary">
+      <h2
+        className={cn([
+          "mt-3 select-none text-balance text-base leading-relaxed text-secondary",
+          !shouldAdaptToSmallContext && "max-w-[384px]",
+        ])}
+      >
         {description}
       </h2>
     </header>
