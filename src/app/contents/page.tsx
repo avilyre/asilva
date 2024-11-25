@@ -1,4 +1,5 @@
 import { PageHeader } from "@/components/page-header";
+import { getAllContents } from "@/lib/api";
 import { generateSEO } from "@/utility/generate-seo";
 
 import { ContentsList } from "./sections/contents-list";
@@ -10,11 +11,13 @@ export const metadata = generateSEO({
 });
 
 const Contents = () => {
+  const allContents = getAllContents();
+
   return (
     <main>
       <PageHeader title={strings.title} description={strings.description} />
 
-      <ContentsList />
+      <ContentsList contents={allContents} />
     </main>
   );
 };
