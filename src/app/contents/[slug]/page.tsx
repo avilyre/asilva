@@ -19,11 +19,13 @@ const ContentDetails = async (props: ContentDetailsProps) => {
 
   const content = getContentBySlug(slug);
 
-  const { title, thumbnail, summary, createdAt } = content;
+  const { title, thumbnail, summary, createdAt, readingTime } = content;
 
   if (!content) notFound();
 
   const formattedHTML = await convertMarkdownToHtml(content.content);
+
+  const readingTimeFormatted = Math.round(readingTime);
 
   return (
     <>
@@ -38,7 +40,7 @@ const ContentDetails = async (props: ContentDetailsProps) => {
           priority
         />
 
-        <div className="mb-16 flex flex-col gap-8 sm:mb-0 sm:flex-row">
+        <div className="mb-16 mt-16 flex flex-col gap-8 sm:mb-0 sm:flex-row">
           <PageHeader
             title={title}
             description={summary}
@@ -58,6 +60,16 @@ const ContentDetails = async (props: ContentDetailsProps) => {
                 >
                   {new Date(createdAt).toLocaleDateString("pt-BR")}
                 </time>
+              </h5>
+            )}
+            {createdAt && (
+              <h5 className="select-none">
+                <span className="mb-1 block text-sm text-secondary">
+                  tempo de leitura
+                </span>
+                <span className="text-base leading-tight text-primary">
+                  {readingTimeFormatted} minutos
+                </span>
               </h5>
             )}
           </section>

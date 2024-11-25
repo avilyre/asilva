@@ -16,6 +16,7 @@ export const ContentsList = (props: ContentsListProps) => {
             title={content.title}
             createdAt={content.createdAt}
             slug={content.slug}
+            readingTime={content.readingTime}
           />
         );
       })}

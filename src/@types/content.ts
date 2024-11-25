@@ -4,6 +4,6 @@ export type Content = {
   summary: string;
   createdAt: string;
   thumbnail: string;
-  excerpt: string;
+  readingTime: number;
   content: string;
 };
