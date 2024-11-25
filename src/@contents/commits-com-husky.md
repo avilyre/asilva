@@ -24,7 +24,7 @@ npx husky-init && npm install
 
 ## O que o comando fez ?
 
-O comando que executamos ele basicamente fez a instalação do husky, colocou um script prepare no nosso package.json e o mais importante, criou uma pasta chamada .husky que contém um arquivo chamado
+O comando que executamos ele basicamente fez a instalação do husky, colocou um script prepare no nosso `package.json` e o mais importante, criou uma pasta chamada `.husky` que contém um arquivo chamado
 pre-commit, se você abrir esse arquivo vai ver que dentro dele tem um comando de exemplo npm test, ai que está o pulo do gato, quando você fizer algum commit esse npm test vai ser automaticamente executado sem que você precise fazer mais nada 🤯
 
 E agora vamos configurar o Eslint no nosso projeto e executar ele com o Husky, é bem simples fazer isso:
@@ -50,11 +50,11 @@ agora crie um arquivo na raiz do seu projeto chamado
 
 Feito isso, pra finalizar, instale a extensão [Eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) no seu VSCode para ver os erros no seu código:
 
-![avily silva](/images/contents/commits-com-husky/eslint-extension.jpg)
+![Eslint no VSCode](/images/contents/commits-com-husky/eslint-extension.jpg)
 
 ## Conclusão
 
-Basta subtituir o comando npm test do arquivo pre-commit por npm run lint e está feito! Agora quando você fizer seu próximo commit o Husky vai executar o Eslint, se tiver erros no seu código o Husky não vai deixar seguir com o commit até que você corrija os problemas no seu código.
+Basta subtituir o comando `npm test` do arquivo pre-commit por `npm run lint` e está feito! Agora quando você fizer seu próximo commit o Husky vai executar o Eslint, se tiver erros no seu código o Husky não vai deixar seguir com o commit até que você corrija os problemas no seu código.
 
 ## Bônus
 
