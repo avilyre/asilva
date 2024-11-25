@@ -1,13 +1,13 @@
 ---
 title: commits com husky - garantindo a qualidade
-summary: aprenda como aumentar a qualidade dos seus commits utilizando o husky, uma ferramente consolidada no mercado e utilizada por grandes empresas.
+summary: Aprenda como aumentar a qualidade dos seus commits utilizando o husky, uma ferramente consolidada no mercado e utilizada por grandes empresas.
 thumbnail: /images/contents/commits-com-husky/thumbnail.jpg
 createdAt: "2024-11-25:16:26:00"
 ---
 
 ## O que é o Husky ?
 
-Em resumo o Husky é uma ferramenta de automação de tarefas, onde suas principais funcionalidades é fazer uso de seus hooks pre-commit e  pre-push para rodar scripts de acordo com o momento do seu commit ou push; seja antes do commit ser finalizado (pre-commit) ou antes de você subir aquela atualização para o repositório remoto (pre-push), por exemplo: você pode querer executar o eslint para verificar erros nos seu código ou até mesmo rodas testes usando algum desses hooks. Beleza, mas como podemos usar o Husky no nosso projeto ? Vamos ao código 👌
+Em resumo o Husky é uma ferramenta de automação de tarefas, onde suas principais funcionalidades é fazer uso de seus hooks pre-commit e  pre-push para rodar scripts de acordo com o momento do seu commit ou push; seja antes do commit ser finalizado (pre-commit) ou antes de você subir aquela atualização para o repositório remoto (pre-push), por exemplo: você pode querer executar o eslint para verificar erros no seu código ou até mesmo rodas testes usando algum desses hooks. Beleza, mas como podemos usar o Husky no nosso projeto ? Vamos ao código 👌
 
 ## Configurando o Husky
 
