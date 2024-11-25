@@ -1,6 +1,10 @@
 .content {
   @apply text-secondary leading-relaxed;
 
+  img[title] {
+    @apply aspect-video w-full select-none rounded-md bg-tertiary object-cover sm:aspect-[16/5.68];
+  }
+
   a {
     @apply text-primary underline;
 
