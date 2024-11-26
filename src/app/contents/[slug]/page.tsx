@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import { Fragment } from "react";
 
 import { PageHeader } from "@/components/page-header";
 import { getContentBySlug } from "@/lib/api";
@@ -28,7 +29,7 @@ const ContentDetails = async (props: ContentDetailsProps) => {
   const readingTimeFormatted = Math.round(readingTime);
 
   return (
-    <>
+    <Fragment>
       <header>
         <Image
           src={thumbnail}
@@ -79,7 +80,10 @@ const ContentDetails = async (props: ContentDetailsProps) => {
         className="content"
         dangerouslySetInnerHTML={{ __html: formattedHTML }}
       />
-    </>
+      <footer className="mt-16 text-balance leading-relaxed text-secondary">
+        🎉 Parabéns por chegar conluir essa leitura e muito obrigado!
+      </footer>
+    </Fragment>
   );
 };
 

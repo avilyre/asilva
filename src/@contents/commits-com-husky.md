@@ -58,7 +58,7 @@ Basta subtituir o comando `npm test` do arquivo pre-commit por `npm run lint` e 
 
 ## Bônus
 
-Bonus: Corrija os erros automaticamente com a flag `--fix`
+Corrija os erros automaticamente com a flag `--fix`
 
 ```json
 {
