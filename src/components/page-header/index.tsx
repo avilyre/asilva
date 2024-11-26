@@ -32,12 +32,7 @@ export const PageHeader = (props: PageHeaderProps) => {
       >
         {title}
       </h1>
-      <h2
-        className={cn([
-          "mt-3 select-none text-balance text-base leading-relaxed text-secondary",
-          !shouldAdaptToSmallContext && "max-w-[384px]",
-        ])}
-      >
+      <h2 className="mt-3 max-w-[384px] select-none text-balance text-base leading-relaxed text-secondary">
         {description}
       </h2>
     </header>

@@ -51,7 +51,7 @@ const ContentDetails = async (props: ContentDetailsProps) => {
 
           <section className="flex flex-col gap-8">
             {createdAt && (
-              <h5 className="select-none">
+              <h5 className="flex select-none flex-col">
                 <span className="mb-1 block text-sm text-secondary">
                   publicado em
                 </span>
@@ -64,7 +64,7 @@ const ContentDetails = async (props: ContentDetailsProps) => {
               </h5>
             )}
             {createdAt && (
-              <h5 className="select-none">
+              <h5 className="flex select-none flex-col">
                 <span className="mb-1 block text-sm text-secondary">
                   tempo de leitura
                 </span>
