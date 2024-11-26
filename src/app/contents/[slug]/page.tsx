@@ -5,8 +5,29 @@ import { Fragment } from "react";
 import { PageHeader } from "@/components/page-header";
 import { getContentBySlug } from "@/lib/api";
 import { convertMarkdownToHtml } from "@/lib/convert-markdown-to-html";
+import { generateSEO } from "@/utility/generate-seo";
 
 import { ContentDetailsProps } from "./interface";
+
+export async function generateMetadata(props: Readonly<ContentDetailsProps>) {
+  const {
+    params: { slug },
+  } = props;
+
+  const { title, summary, thumbnail, createdAt } = getContentBySlug(slug);
+
+  return generateSEO({
+    title,
+    description: summary,
+    openGraph: {
+      title,
+      type: "article",
+      publishedTime: createdAt,
+      description: summary,
+      images: thumbnail,
+    },
+  });
+}
 
 const ContentDetails = async (props: ContentDetailsProps) => {
   const {

@@ -1,5 +1,5 @@
 ---
-title: commits com husky - garantindo a qualidade
+title: Commits com husky - Garantindo a qualidade
 summary: Aprenda como aumentar a qualidade dos seus commits utilizando o husky, uma ferramente consolidada no mercado e utilizada por grandes empresas.
 thumbnail: /images/contents/commits-com-husky/thumbnail.jpg
 createdAt: "2024-11-25:16:26:00"
