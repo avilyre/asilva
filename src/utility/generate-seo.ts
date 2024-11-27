@@ -12,17 +12,26 @@ export async function generateSEO(
     ? seoMetadata.description
     : appConfig.description;
 
-  const metadata = {
+  const openGraph = seoMetadata?.openGraph;
+
+  const { author } = appConfig;
+
+  const metadata: SeoMetadata = {
     ...seoMetadata,
     title: pageTitle,
     description: pageDescription,
     metadataBase: new URL("https://www.avilysilva.com"),
+    publisher: `${author.firstName} ${author.lastName}`,
+    authors: [
+      {
+        name: `${author.firstName} ${author.lastName}`,
+      },
+    ],
     openGraph: {
-      type: "profile",
-      title: "avily silva",
-      firstName: "Avily",
-      lastName: "Silva",
-      emails: ["avilyre@gmail.com"],
+      ...openGraph,
+      title: pageTitle,
+      description: pageDescription,
+      emails: author.emails,
     },
     robots: {
       index: true,

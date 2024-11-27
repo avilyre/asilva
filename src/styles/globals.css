@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "./highlight.css";
+@import "./content.css";
+
 body {
   font-smoothing: antialiased;
 }
