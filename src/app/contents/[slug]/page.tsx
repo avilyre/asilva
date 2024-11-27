@@ -66,7 +66,7 @@ const ContentDetails = async (props: ContentDetailsProps) => {
           <PageHeader
             title={title}
             description={summary}
-            className="mb-0 flex-1 sm:mb-16"
+            className="mb-0 flex-1 sm:mb-8"
             shouldAdaptToSmallContext
           />
 
@@ -101,8 +101,9 @@ const ContentDetails = async (props: ContentDetailsProps) => {
         className="content"
         dangerouslySetInnerHTML={{ __html: formattedHTML }}
       />
-      <footer className="mt-16 text-balance leading-relaxed text-secondary">
-        🎉 Parabéns por chegar conluir essa leitura e muito obrigado!
+      <footer className="mt-8 text-balance leading-relaxed text-secondary">
+        <h5 className="mb-4 text-3xl text-white">Concluída!</h5>
+        Parabéns por chegar concluir essa leitura e muito obrigado! 🎉
       </footer>
     </Fragment>
   );
