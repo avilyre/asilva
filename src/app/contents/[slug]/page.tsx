@@ -62,7 +62,7 @@ const ContentDetails = async (props: ContentDetailsProps) => {
           priority
         />
 
-        <div className="mb-16 mt-16 flex flex-col gap-8 sm:mb-0 sm:flex-row">
+        <div className="my-8 flex flex-col-reverse gap-8 sm:mb-10 sm:mt-8 sm:flex-row">
           <PageHeader
             title={title}
             description={summary}
@@ -70,7 +70,7 @@ const ContentDetails = async (props: ContentDetailsProps) => {
             shouldAdaptToSmallContext
           />
 
-          <section className="flex flex-col gap-8">
+          <section className="flex flex-row gap-8 sm:flex-col">
             {createdAt && (
               <h5 className="flex select-none flex-col">
                 <span className="mb-1 block text-sm text-secondary">
