@@ -1,5 +1,5 @@
 .content {
-  @apply text-secondary leading-relaxed;
+  @apply text-secondary leading-8;
 
   code:not([class*='language']) {
     @apply bg-[#282c34] text-secondary px-2 py-[0.5px] rounded;
