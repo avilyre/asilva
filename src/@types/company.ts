@@ -7,6 +7,8 @@ export interface Company {
 }
 
 export enum Companies {
+  CWI = "CWI",
+  PAO_DE_ACUCAR = "pão de açucar",
   TRACTIAN = "tractian",
   MERITUM = "meritum",
   META = "meta",
