@@ -13,9 +13,16 @@ export const CareerSection = () => {
 
       <div className="flex flex-col gap-8">
         <CareerCard
+          company={getCompany(Companies.CWI)}
+          role="frontend software engineer"
+          startDate="2024-12-02"
+          outsourced={getCompany(Companies.PAO_DE_ACUCAR)}
+        />
+        <CareerCard
           company={getCompany(Companies.TRACTIAN)}
           role="frontend software engineer"
           startDate="2024-08-26"
+          endDate="2024-12-02"
         />
         <CareerCard
           company={getCompany(Companies.MERITUM)}
