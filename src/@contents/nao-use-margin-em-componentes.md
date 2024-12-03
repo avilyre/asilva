@@ -1,5 +1,5 @@
 ---
-title: Não use margin em componentes
+title: Não Use Margin em Componentes
 summary: Um dos maiores problemas ao criar componentes reutilizáveis, é cria-lo pensando apenas num único contexto de uso.
 thumbnail: /images/contents/nao-use-margin-em-componentes/thumbnail.jpg
 createdAt: "2024-11-28:10:55:00"
