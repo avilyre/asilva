@@ -1,5 +1,5 @@
 ---
-title: Melhorando acessibilidade e usabilidade
+title: Melhorando Acessibilidade e Usabilidade
 summary: Entenda como melhorar a acessibilidade dos seus projetos e se torne um(a) profissional mais completo(a).
 thumbnail: /images/contents/melhorando-acessibilidade/thumbnail.jpg
 createdAt: "2024-11-27:17:06:00"
