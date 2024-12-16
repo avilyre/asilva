@@ -14,8 +14,8 @@ export const ShareBar = (props: ShareBarProps) => {
 
   const [isCopied, setIsCopied] = useState(false);
 
-  const shareLinkedInUrl = `https://www.linkedin.com/sharing/share-offsite?text=${content.title}&url=${currentUrl}`;
-  const shareTwitterInUrl = `https://x.com/intent/post?text=${content.title}&url=${currentUrl}`;
+  const shareLinkedInUrl = `https://www.linkedin.com/sharing/share-offsite?text=${content.title}:+%20${currentUrl}&url=${currentUrl}`;
+  const shareTwitterInUrl = `https://x.com/intent/post?text=${content.title}:+%20${currentUrl}&url=${currentUrl}`;
 
   const handleCopyCurrentUrl = () => {
     setIsCopied(() => true);
