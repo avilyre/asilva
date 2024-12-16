@@ -10,7 +10,7 @@ export const ShareBar = (props: ShareBarProps) => {
   const { content } = props;
 
   const resetCopiedTimeout = 3000; /// 3 seconds;
-  const currentUrl = window.location.href;
+  const currentUrl = `https://avilysilva.com${window.location.pathname}`;
 
   const [isCopied, setIsCopied] = useState(false);
 
