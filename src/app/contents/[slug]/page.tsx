@@ -98,7 +98,7 @@ const ContentDetails = async (props: ContentDetailsProps) => {
           </section>
         </div>
 
-        <ShareBar content={{ title }} />
+        <ShareBar content={{ title, slug: content.slug }} />
       </header>
       <article
         className="content"
