@@ -8,13 +8,28 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        "reaction-reveal": "reaction-reveal 0.3s ease-in-out",
+      },
+      keyframes: {
+        "reaction-reveal": {
+          "0%": {
+            transform: "translateX(-2px)",
+            opacity: "0%",
+          },
+          "100%": {
+            transform: "translateX(0px)",
+            opacity: "100%",
+          },
+        },
+      },
       colors: {
         primary: "#F8FAFC",
         secondary: "#94A3B8",
         tertiary: "#1E293B",
         highlight: "#F8FAFC",
         background: "#020617",
-        ocean: "#3B82F6"
+        ocean: "#3B82F6",
       },
       backgroundImage: {
         "bg-card-placeholder": "url('/images/card-placeholder-logo.png')",

@@ -26,6 +26,7 @@
     "@vercel/speed-insights": "^1.0.11",
     "clsx": "^2.1.1",
     "cypress": "^13.11.0",
+    "firebase": "^11.1.0",
     "framer-motion": "^11.3.28",
     "gray-matter": "^4.0.3",
     "keen-slider": "^6.8.6",

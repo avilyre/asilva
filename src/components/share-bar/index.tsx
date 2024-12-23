@@ -10,7 +10,7 @@ export const ShareBar = (props: ShareBarProps) => {
   const { content } = props;
 
   const resetCopiedTimeout = 3000; /// 3 seconds;
-  const currentUrl = `https://avilysilva.com${window.location.pathname}`;
+  const currentUrl = `https://avilysilva.com${window?.location?.pathname}`;
 
   const [isCopied, setIsCopied] = useState(false);
 
@@ -28,7 +28,7 @@ export const ShareBar = (props: ShareBarProps) => {
   };
 
   return (
-    <div className="mb-8 flex w-fit items-center gap-2.5 rounded-md bg-tertiary/50 px-4 py-2">
+    <div className="flex w-fit items-center gap-2.5 rounded-md bg-tertiary/50 px-4 py-2">
       <span className="text-secondary">{strings.share}</span>
       <a
         title="Compartilhar no Linkedin"
