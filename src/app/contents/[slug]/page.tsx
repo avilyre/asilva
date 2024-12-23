@@ -8,6 +8,7 @@ import { getContentBySlug } from "@/lib/api";
 import { convertMarkdownToHtml } from "@/lib/convert-markdown-to-html";
 import { generateSEO } from "@/utility/generate-seo";
 
+import { Reaction } from "./components/reaction";
 import { ContentDetailsProps } from "./interface";
 
 export async function generateMetadata(props: Readonly<ContentDetailsProps>) {
@@ -98,7 +99,10 @@ const ContentDetails = async (props: ContentDetailsProps) => {
           </section>
         </div>
 
-        <ShareBar content={{ title, slug: content.slug }} />
+        <div className="mb-8 flex items-center gap-2">
+          <ShareBar content={{ title, slug: content.slug }} />
+          <Reaction slug={slug} />
+        </div>
       </header>
       <article
         className="content"
