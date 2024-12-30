@@ -12,9 +12,7 @@ import { Reaction } from "./components/reaction";
 import { ContentDetailsProps } from "./interface";
 
 export async function generateMetadata(props: Readonly<ContentDetailsProps>) {
-  const {
-    params: { slug },
-  } = props;
+  const { slug } = await props.params;
 
   const { title, summary, thumbnail, createdAt } = getContentBySlug(slug);
 
@@ -31,10 +29,8 @@ export async function generateMetadata(props: Readonly<ContentDetailsProps>) {
   });
 }
 
-const ContentDetails = async (props: ContentDetailsProps) => {
-  const {
-    params: { slug },
-  } = props;
+const ContentDetails = async (props: Readonly<ContentDetailsProps>) => {
+  const { slug } = await props.params;
 
   const defaultThumbnailSize = {
     height: 285,

@@ -1,5 +1,5 @@
 export interface ProjectDetails {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }

@@ -1,5 +1,5 @@
 export interface ContentDetailsProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
