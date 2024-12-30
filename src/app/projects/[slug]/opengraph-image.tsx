@@ -14,15 +14,13 @@ export const size = {
 export const contentType = "image/png";
 
 interface ImageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export default async function Image(props: ImageProps) {
-  const {
-    params: { slug },
-  } = props;
+  const { slug } = await props.params;
 
   const { data: project } = await getProject(slug);
 

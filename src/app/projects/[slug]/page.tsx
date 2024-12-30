@@ -19,9 +19,7 @@ import type { ProjectDetails } from "./interface";
 import { strings } from "./strings";
 
 export const generateMetadata = async (props: Readonly<ProjectDetails>) => {
-  const {
-    params: { slug },
-  } = props;
+  const { slug } = await props.params;
 
   const { data: project } = await getProject(slug);
 
@@ -42,9 +40,7 @@ export const generateStaticParams = async () => {
 };
 
 const ProjectDetails = async (props: Readonly<ProjectDetails>) => {
-  const {
-    params: { slug },
-  } = props;
+  const { slug } = await props.params;
 
   const defaultThumbnailSize = {
     height: 285,
