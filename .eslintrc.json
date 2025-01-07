@@ -22,5 +22,8 @@
   ],
   "rules": {
     "simple-import-sort/imports": "error"
+  },
+  "globals": {
+    "vitest": true
   }
 }

@@ -1,6 +1,6 @@
 import { ContentItem } from "@/components/content-item";
 
-import { ContentsListProps } from "./contents-list";
+import { ContentsListProps } from "./interface";
 
 export const ContentsList = (props: ContentsListProps) => {
   const { contents } = props;
